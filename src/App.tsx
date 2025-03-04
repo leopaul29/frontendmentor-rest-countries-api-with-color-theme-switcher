@@ -76,7 +76,7 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'} transition-colors duration-300`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-100 text-gray-800'} transition-colors duration-300 font-nunito`}>
       {/* Header */}
       <header className={`py-6 px-4 md:px-16 shadow-md ${darkMode ? 'bg-gray-700' : 'bg-white'} transition-colors duration-300`}>
         <div className="container mx-auto flex justify-between items-center">
