@@ -10,6 +10,30 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
 
+## Disclamer, AI as been used!
+
+I wanted to see how to use AI tool to handle one of the most difficult free project on frontendmentor.io.
+
+### First step
+I went to [bolt.new](https://bolt.new/) and use the following simple prompt:
+```I want to make this project https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca```
+
+10 sec later I had the project fully working. It took me 5-10 minutes to check all code and features.
+
+### Second step
+I gave it the style-guide and data.json file with the following prompt:
+```With that file of style guidline, can you change tailwind by normal css with those values and check that it looks like the expected result. With the second file data.json, can you handle the error when the api doesn't work and use that data file instead of firing an error please```
+
+
+I realized that the css had a glitch on the search bar that was overlapping the navbar with the title.
+
+I just check where the new font was import and how to import a font in a react-tailwind project with [phind](https://www.phind.com/). It shows me the 3 files to update and that was done.
+
+To use the data.json when failing, I just added a caracter in the url of the api to make it fail. I copy what bolt has writen to import the country data with the file. Added it with the new type and parsing method and it was over.
+
+### Conclusion
+Very impresive. 30 minutes more or less to complete it.
+
 ## The challenge
 
 Your challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
