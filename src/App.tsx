@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Moon, Sun, Search } from 'lucide-react';
 import CountryCard from './components/CountryCard';
 import CountryDetail from './components/CountryDetail';
-import { Country } from './types';
+import { Country, normalizeCountry } from './types';
+import localData from './data.json';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -27,7 +28,10 @@ function App() {
         setFilteredCountries(data);
         setLoading(false);
       } catch (err) {
-        setError('Failed to fetch countries. Please try again later.');
+        console.error('Failed to fetch countries:', err);
+        const normalizedData = localData.map(country => normalizeCountry(country));
+        setCountries(normalizedData);
+        setFilteredCountries(normalizedData);
         setLoading(false);
       }
     };
